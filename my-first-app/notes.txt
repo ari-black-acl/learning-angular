@@ -1,0 +1,20 @@
+
+
+src tutorial: https://angular.dev/tutorials/first-app/01-hello-world
+
+angular app files are in /src
+    - top level html template, style sheet, main function, app icon
+
+angular app component files are in /app
+    - app-root component is the top level component, app.ts is its src file
+    - app.css is the style sheet for root, and new components are added here
+
+images in /assets
+
+extensions
+    - .angular      -> required to build app
+    - /e2e          -> files to test app
+    - .node_modules -> app's node.js packages
+    - angular.json  -> describes app to app building tools
+    - package.json  -> used by npm to run finished app
+    - tsconfig.*    -> describe app's configuration to TS compiler
