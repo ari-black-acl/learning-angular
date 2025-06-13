@@ -12,9 +12,9 @@ angular app component files are in /app
 images in /assets
 
 extensions
-    - .angular      -> required to build app
+    - .angular      -> required to build app (in .gitignore)
     - /e2e          -> files to test app
-    - .node_modules -> app's node.js packages
+    - .node_modules -> app's node.js packages (in .gitignore)
     - angular.json  -> describes app to app building tools
     - package.json  -> used by npm to run finished app
     - tsconfig.*    -> describe app's configuration to TS compiler
