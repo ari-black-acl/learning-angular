@@ -29,3 +29,6 @@ html tags
         - not all elements have closing tabs 
             - container tags (containing content) end in </tag>
             - non-container tags can start and end with in the same tag (no closing tag) <tag args />
+
+interfaces
+    - create new interface with ng generate interface housinglocation
