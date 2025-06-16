@@ -21,3 +21,10 @@ extensions
 
 creating new components
     - done automatically by ng -> ng generate component <name>
+
+html tags
+    - elements start and end with tags (<tag> </tag>)
+        - all opening tabs begin sections of page content, and they all look the same
+        - not all elements have closing tabs 
+            - container tags (containing content) end in </tag>
+            - non-container tags can start and end with in the same tag (no closing tag) <tag args />

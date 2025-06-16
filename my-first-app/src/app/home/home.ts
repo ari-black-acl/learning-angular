@@ -4,11 +4,16 @@ import { Component } from '@angular/core';
   selector: 'app-home',
   imports: [],
   template: `
-    <p>
-      home works!
-    </p>
+    <section>
+
+    <!-- search filter and button -->
+      <form>
+        <input type='text' placeholder='Filter by city' />
+        <button class='primary' type='button'> Search </button>
+      </form>
+    </section>
   `,
-  styles: ``
+  styleUrls: ['./home.css']
 })
 export class Home {
 
