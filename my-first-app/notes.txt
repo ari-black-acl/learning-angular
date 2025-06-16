@@ -21,6 +21,7 @@ extensions
 
 creating new components
     - done automatically by ng -> ng generate component <name>
+    - it's good practice to rebuild the app each time after creating a component with ng serve
 
 html tags
     - elements start and end with tags (<tag> </tag>)
