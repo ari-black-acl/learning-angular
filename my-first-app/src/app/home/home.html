@@ -12,7 +12,11 @@
 
     <!-- search results -->
      <section class='results'>
-        <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
+        <!-- *ngFor loop to iterate over each listing (location) -->
+        <app-housing-location 
+          *ngFor="let housingLocation of housingLocationList"
+          [housingLocation]="housingLocation">
+        </app-housing-location>
      </section>
 
 </html>
