@@ -1,2 +1,2 @@
 # learning-angular
-an application i'm developing to learn and get more familiar with angular, ts, js, ...
+my first angular app (mainly) following a tutorial provided from the official angular docs
