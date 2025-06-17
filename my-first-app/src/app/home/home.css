@@ -2,21 +2,30 @@
 /* search results */
 .results {
     display: grid;
-    column-gap: 14px;
+    column-gap: 30px;
     row-gap: 14px;
     grid-template-columns: repeat(auto-fill, (minmax(400px, 400px)));
-    margin-top: 50px;
+    margin: auto;
+    width: 80%;
+    padding: 50px;
     justify-content: space-around;
 }
 
 /* search field */
+form {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
 input[type='text'] {
     border: solid 1px var(--primary-color);
-    padding: 10px;
-    border-radius: 8px;
-    margin-right: 4px;
-    display: inline-block;
-    width: 30%;
+    padding: 10px;      /* padding around search text */
+    border-radius: 10px; /* makes corners of search box curved */
+    margin-right: 4px;  /* space between box and button */
+    margin-left: 20px;
+    /* display: inline-block; */
+    width: 50%;
 }
 
 /* button styling */
@@ -24,20 +33,32 @@ button {
     padding: 10px;
     border: solid 1px var(--primary-color);
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
-    .results {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* listing styling */
+
+@media (max-width: 768px) {
     input[type='text'] {
-        width: 70%;
-    }
-}
-
-@media (max-width: 499px) {
+        margin-left: 5px;
+    };
     .results {
         grid-template-columns: 1fr;
+    };
+
+}
+
+/* 2 columns if wider  screen */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);  
     }
 }
+
+/* 3 columns if widest */
+@media (min-width: 1200px) {
+    .results {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
