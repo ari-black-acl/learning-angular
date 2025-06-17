@@ -11,14 +11,14 @@ import { HousingLocationInfo } from '../housinglocation';
 })
 
 export class Home {
-  readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
+  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
   housingLocation: HousingLocationInfo = {
     id: 9999,
     name: 'Test Home',
     city: 'Test city',
     state: 'ST',
-    photo: `$S{this.baseUrl}/example-house.jpg`,
+    photo: `${this.baseUrl}/example-house.jpg`,
     availableUnits: 99,
     wifi: true,
     laundry: false,
