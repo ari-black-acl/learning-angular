@@ -1,26 +1,12 @@
 import { Component } from '@angular/core';
 import { HousingLocation } from '../housing-location/housing-location';
 import { CommonModule } from '@angular/common';
-import {HousingLocationInfo} from '../housinglocation';
+import { HousingLocationInfo } from '../housinglocation';
 
 @Component({
   selector: 'app-home',
   imports: [CommonModule, HousingLocation],
-  template: `
-    <section>
-
-    <!-- search filter and button -->
-      <form>
-        <input type='text' placeholder='Filter by city' />
-        <button class='primary' type='button'> Search </button>
-      </form>
-    </section>
-
-    <!-- search results -->
-     <section class='results'>
-        <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
-     </section>
-  `,
+  templateUrl: './home.html',
   styleUrls: ['./home.css']
 })
 
