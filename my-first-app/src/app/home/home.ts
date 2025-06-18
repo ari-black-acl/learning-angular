@@ -17,7 +17,6 @@ export class Home {
 
   constructor() {
     // get all locations to fill location list
-
     this.housingLocationList = this.housingService.getAllHousingLocations();
   }
 }

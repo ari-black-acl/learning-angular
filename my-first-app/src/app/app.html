@@ -2,16 +2,20 @@
 <html lang="en">
 
     <main>
+      <a [routerLink]="['/']">
 
-      <!-- header, title and logo -->
-      <header class='brand-name'>
-        <img class='brand-logo' src='/assets/logo.svg' alt='logo' aria-hidden='true' />
-      </header>
+        <!-- header, title and logo -->
+        <header class='brand-name'>
+          <img class='brand-logo' src='/assets/logo.svg' alt='logo' aria-hidden='true' />
+        </header>
 
-      <!-- main content -->
-      <section class = 'content'>
-        <app-home></app-home>
-      </section>
+        <!-- main content -->
+        <section class = 'content'>
+          <router-outlet></router-outlet>
+        </section>
+
+      </a>
+
 
     </main>
 
