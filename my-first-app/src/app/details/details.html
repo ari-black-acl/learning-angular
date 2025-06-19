@@ -30,7 +30,7 @@
             <h2 class="section-heading">Apply to live here now!</h2>
 
             <!-- form and event handler-->
-            <form [formGroup]="applyForm" (submit)="submitApplication()">
+            <form [formGroup]="applyForm" (submit)="submitApplication(); alert(success); clearForm()">
 
                 <label for="first-name">First Name</label>
                 <input id="first-name" type="text" formControlName="firstName" />

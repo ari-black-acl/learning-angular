@@ -36,6 +36,21 @@ export class Details {
       this.applyForm.value.lastName ?? '',
       this.applyForm.value.email ?? ''
     );
+
   }
+
+  clearForm() {
+    this.applyForm.reset();
+  }
+
+  readonly success = 'Application sent successfully!';
+  alert( value : string ) {
+    window.alert(value);
+  }
+
+
+
+
+
 
 }
