@@ -9,7 +9,7 @@ const routeConfig : Routes = [
         title: 'Home page'
     },
     {
-        path: 'details/:id',
+        path: 'details/:id',    // id is dynamic 
         component: Details,
         title: 'Home details'
     }

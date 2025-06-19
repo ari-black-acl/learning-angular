@@ -2,20 +2,19 @@
 <html lang="en">
 
     <main>
-      <a [routerLink]="['/']">
 
+      <!-- anchor -->
+      <a [routerLink]="['/']">
         <!-- header, title and logo -->
         <header class='brand-name'>
           <img class='brand-logo' src='/assets/logo.svg' alt='logo' aria-hidden='true' />
         </header>
-
-        <!-- main content -->
-        <section class = 'content'>
-          <router-outlet></router-outlet>
-        </section>
-
       </a>
 
+        <!-- main content -->
+      <section class = 'content'>
+        <router-outlet></router-outlet>
+      </section>
 
     </main>
 
