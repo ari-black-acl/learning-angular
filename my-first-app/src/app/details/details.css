@@ -1,4 +1,10 @@
 
+/* apply now button */
+.primary {
+    cursor: pointer;
+    font-size: 12pt;
+}
+
 .listing-photo {
     height: 600px;
     width: 50%;
@@ -8,32 +14,34 @@
 }
 
 .listing-heading {
-    font-size: 48pt;
+    font-size: 40pt;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
+/* pin icon next to location header */
 .listing-location::before {
     content: url('/assets/location-pin.svg') / '';
 }
 
 .listing-location {
-    font-size: 24pt;
-    margin-bottom: 15px;
+    font-size: 20pt;
+    margin-bottom: 30px;
 }
 
 .listing-features > .section-heading {
     color: var(--secondary-color);
-    font-size: 24pt;
+    font-size: 20pt;
     margin-bottom: 15px;
 }
 
 .listing-features {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+/* li = list items */
 .listing-features li {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 li {
