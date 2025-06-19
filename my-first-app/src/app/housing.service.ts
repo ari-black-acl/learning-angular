@@ -111,15 +111,22 @@ export class HousingService {
       wifi: true,
       laundry: true,
     },
-];
+  ];
 
-getAllHousingLocations(): HousingLocationInfo[] {
-  return this.housingLocationList;
-}
+  getAllHousingLocations(): HousingLocationInfo[] {
+    return this.housingLocationList;
+  }
 
-getHousingLocationById(id: number): HousingLocationInfo | undefined {
-  // <function> => <expression>
-  // true if location id has same value and type as id
-  return this.housingLocationList.find((housingLocation) => housingLocation.id === id);
-}
+  getHousingLocationById(id: number): HousingLocationInfo | undefined {
+    // <function> => <expression>
+    // true if location id has same value and type as id
+    return this.housingLocationList.find((housingLocation) => housingLocation.id === id);
+  }
+
+  submitApplication(firstName: string, lastName: string, email: string) {
+    // submit application for a listing
+    console.log(
+      `Homes application received: firstName: ${firstName}, lastname: ${lastName}, email: ${email}.`
+    );
+  }
 }

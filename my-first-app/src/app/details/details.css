@@ -57,14 +57,15 @@ label {
 }
 
 input {
-    font-size: 16pt;
+    font-size: 14pt;
     margin-bottom: 15px;
     padding: 10px;
+    padding-bottom: 5px;
     width: 400px;
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: none;
+    border-bottom-width: 1px;
 }
 
 @media (max-width: 1024px) {
